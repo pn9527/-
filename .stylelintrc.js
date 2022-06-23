@@ -1,18 +1,21 @@
 module.exports = {
   extends: [
     'stylelint-config-standard',
-    'stylelint-config-css-modules',
+    // 'stylelint-config-css-modules',
+    'stylelint-config-rational-order',
     'stylelint-config-prettier',
-    'stylelint-config-html/vue',
-    'stylelint-config-recommended-vue',
   ],
   plugins: [
-    'stylelint-order',
     'stylelint-declaration-block-no-ignored-properties',
+    'stylelint-less',
   ],
   rules: {
     indentation: 2,
-    'no-descending-specificity': null, // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器
+    'comment-empty-line-before': null,
+    'declaration-empty-line-before': null,
+    'no-descending-specificity': null,
+    'function-comma-newline-after': null,
+    'function-name-case': ['lower', { ignoreFunctions: ['/colorPalette/'] }],
     'function-url-quotes': 'always',
     'selector-attribute-quotes': 'always',
     'font-family-no-missing-generic-family-keyword': null, // iconfont

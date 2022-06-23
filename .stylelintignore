@@ -1,10 +1,7 @@
 /node_modules
-/dist
-
-# .stylelintignore
-# Old style library without packaging
-*.min.css
-​
+/public/*
+public/*
+src/assets/font/*
 # Other types of documents
 *.js
 *.jpg
@@ -12,5 +9,5 @@
 ​
 # Testing and packaging catalog
 /test/
-/dist/
+/dist/*
 /lib/
