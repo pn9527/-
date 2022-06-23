@@ -1,0 +1,16 @@
+/node_modules
+/dist
+
+# .stylelintignore
+# Old style library without packaging
+*.min.css
+​
+# Other types of documents
+*.js
+*.jpg
+*.woff
+​
+# Testing and packaging catalog
+/test/
+/dist/
+/lib/
