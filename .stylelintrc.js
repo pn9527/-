@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'stylelint-config-standard',
-    // 'stylelint-config-css-modules',
+    'stylelint-config-css-modules',
     'stylelint-config-rational-order',
     'stylelint-config-prettier',
   ],
@@ -11,6 +11,7 @@ module.exports = {
   ],
   rules: {
     indentation: 2,
+    'no-invalid-double-slash-comments': true,
     'comment-empty-line-before': null,
     'declaration-empty-line-before': null,
     'no-descending-specificity': null,
