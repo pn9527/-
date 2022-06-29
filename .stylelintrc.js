@@ -2,6 +2,8 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-css-modules',
+    'stylelint-config-html/vue',
+    'stylelint-config-recess-order',
     'stylelint-config-prettier',
   ],
   plugins: ['stylelint-declaration-block-no-ignored-properties', 'stylelint-less'],
