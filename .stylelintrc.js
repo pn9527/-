@@ -2,13 +2,9 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-css-modules',
-    'stylelint-config-rational-order',
     'stylelint-config-prettier',
   ],
-  plugins: [
-    'stylelint-declaration-block-no-ignored-properties',
-    'stylelint-less',
-  ],
+  plugins: ['stylelint-declaration-block-no-ignored-properties', 'stylelint-less'],
   rules: {
     indentation: 2,
     'no-invalid-double-slash-comments': true,
